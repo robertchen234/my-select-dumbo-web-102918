@@ -1,3 +1,3 @@
 def my_select(collection)
- collection.select{ |x| 
+ collection.select{ |x| yield(x) }
 end
